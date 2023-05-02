@@ -1,0 +1,29 @@
+{
+  "api": "0.13",
+  "api_compatibility": [
+    "14"
+  ],
+  "space": "Hackerspace Test",
+  "logo": "https://mqtt.hackerspace.gent/0x20.png",
+  "url": "https://hackerspace.gent",
+  "location": {
+    "address": "Wiedauwkaai 51, 9032 Gent, Belgium",
+    "lon": 3.72446,
+    "lat": 51.07478
+  },
+  "contact": {
+    "email": "info@hackerspace.gent",
+    "ml": "ghent@discuss.hackerspaces.be",
+    "matrix": "#hackerspace.gent:matrix.org",
+    "mastodon": "@hsg@chaos.social",
+    "twitter": "@hsghent",
+    "facebook": "https://facebook.com/hackerspace.gent"
+  },
+  "issue_report_channels": [
+    "email"
+  ],
+  "state": {
+    "open": true,
+    "lastchange": 1683057577
+  }
+}
