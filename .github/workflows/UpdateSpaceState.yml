@@ -5,14 +5,13 @@ on:
     types: do-something
 jobs:
   build:
-    name: Run Some Thing
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - run: echo hello > world.txt
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: my-artifact
-          path: world.txt
+      - run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
