@@ -8,5 +8,11 @@ jobs:
     name: Run Some Thing
     runs-on: ubuntu-latest
     steps:
-      - name: Do Something
-        run: echo Doing Something...
+      - uses: actions/checkout@v3
+
+      - run: echo hello > world.txt
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: world.txt
