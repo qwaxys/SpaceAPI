@@ -2,6 +2,10 @@ name: Update the space state manually
 
 on:
   workflow_dispatch:
+    inputs:
+      open:
+        required: true
+        type: boolean
   
 jobs:
   build:
@@ -9,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          sed -e "s/\${open}/true/" -e "s/\${lastchange}/$(date +%s)/" template.json > spaceapi.json
+          sed -e "s/\${open}/${{ inputs.open }}/" -e "s/\${lastchange}/$(date +%s)/" template.json > spaceapi.json
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
