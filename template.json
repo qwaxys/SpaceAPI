@@ -3,24 +3,18 @@
   "api_compatibility": [
     "14"
   ],
-  "space": "Hackerspace.Gent",
-  "logo": "https://mqtt.hackerspace.gent/0x20.png",
-  "url": "https://hackerspace.gent",
+  "space": "Example",
+  "logo": "https://spaceapi.io/static/images/spaceapi-logo-230px.png",
+  "url": "https://github.com/qwaxys/SpaceAPI",
   "location": {
-    "address": "Wiedauwkaai 51, 9032 Gent, Belgium",
-    "lon": 3.72446,
-    "lat": 51.07478
+    "lon": -0.1093432,
+    "lat": 55.0501998
   },
   "contact": {
-    "email": "info@hackerspace.gent",
-    "ml": "ghent@discuss.hackerspaces.be",
-    "matrix": "#hackerspace.gent:matrix.org",
-    "mastodon": "@hsg@chaos.social",
-    "twitter": "@hsghent",
-    "facebook": "https://facebook.com/hackerspace.gent"
+    "mastodon": "@qwaxys@chaos.social"
   },
   "issue_report_channels": [
-    "email"
+    "mastodon"
   ],
   "state": {
     "open": ${open},
