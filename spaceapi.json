@@ -11,13 +11,13 @@
     "lat": 55.0501998
   },
   "contact": {
-    "mastodon": "@qwaxys@chaos.social"
+    "email": "qwaxys@users.noreply.github.com"
   },
   "issue_report_channels": [
-    "mastodon"
+    "email"
   ],
   "state": {
-    "open": false,
-    "lastchange": 1683129490
+    "open": true,
+    "lastchange": 1683130162
   }
 }
