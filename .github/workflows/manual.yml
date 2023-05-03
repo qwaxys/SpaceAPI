@@ -17,5 +17,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "generated"
+          [[ ${{ inputs.open }} == true ]] && git commit -m "space opened" || git commit -m "space closed"
           git push
